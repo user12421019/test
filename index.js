@@ -1,4 +1,3 @@
-var p = document.getElementsByTagName('p').item(0);
+var cssrule = document.styleSheets[0].cssRules[0];
 
-var style = document.defaultView.getComputedStyle(p, "::first-letter");
-console.log(style.backgroundColor);
+cssrule.style.backgroundColor = "blue";

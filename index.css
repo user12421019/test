@@ -9,11 +9,14 @@
 
 }
 
-p {
-  background-color: yellow;
+body {
+  background-color: aqua;
 }
 
-p:first-letter {
-  font-size: 2em;
-  background-color: aqua;
+div {
+  background-color: white;
+}
+
+p {
+  background-color: yellow;
 }
