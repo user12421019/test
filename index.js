@@ -1,10 +1,8 @@
-function aaa() {
-  console.log('aaa!');
-}
-
 var p = document.getElementById('abcd');
-p.onclick = aaa;
 
-p.onclick = function() {
-  console.log('bbb!');
+var handler = function() {
+  console.log('foo!');
+  p.removeEventListener('click', handler, false);
 };
+
+p.addEventListener('click', handler, false);
