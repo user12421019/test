@@ -1,3 +1,5 @@
-var p = document.getElementsByTagName('p').item(0);
+var form = document.forms.item(0);
 
-p.style.border = "10px solid black";
+for (var i = 0; i < form.elements.length; i++) {
+  console.log(form.elements[i].type);
+}
