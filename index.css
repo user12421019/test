@@ -1,3 +1,9 @@
+p {
+  width: 200px;
+  height: 200px;
+  background-color: #ffff00;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
@@ -6,4 +12,5 @@
   p {
     color: #fff;
   }
+
 }
