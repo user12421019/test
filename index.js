@@ -1,3 +1,5 @@
-var a = document.getElementById('aaaaa');
-console.log(a);
-console.log(a.innerHTML);
+var p = document.getElementById('aaaaa');
+var children = p.childNodes;
+var textnode = children.item(0); 
+console.log(textnode.nodeValue);
+textnode.nodeValue = "書き換えました";
