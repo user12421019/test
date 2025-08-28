@@ -1,5 +1,4 @@
-var listener = function(ev) {
-  console.log("target:", ev.target, "relatedTarget:", ev.relatedTarget);
-};
+var p = document.getElementsByTagName('p').item(0);
 
-document.addEventListener('mouseover', listener, false);
+var style = document.defaultView.getComputedStyle(p, "::first-letter");
+console.log(style.backgroundColor);
