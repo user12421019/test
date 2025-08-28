@@ -1,3 +1,4 @@
-var cssrule = document.styleSheets[0].cssRules[0];
+var stylesheet = document.styleSheets[0];
 
-cssrule.style.backgroundColor = "blue";
+var ele = stylesheet.ownerNode;
+ele.parentNode.removeChild(ele);
