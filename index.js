@@ -1,6 +1,2 @@
-var p = document.getElementById('aaaaa');
-var children = p.childNodes;
-
-while (p.hasChildNodes()) {
-  p.removeChild(children.item(0));
-}
+var newelement = document.createElement('p');
+console.log(newelement);
