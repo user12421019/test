@@ -1,5 +1,10 @@
-var form = document.forms.item(0);
-
-for (var i = 0; i < form.elements.length; i++) {
-  console.log(form.elements[i].type);
+function aaa() {
+  console.log('aaa!');
 }
+
+var p = document.getElementById('abcd');
+p.onclick = aaa;
+
+p.onclick = function() {
+  console.log('bbb!');
+};
