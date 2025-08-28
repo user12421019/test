@@ -1,3 +1,3 @@
-function aaa() {
-  document.form1.input1.value = "test";
-}
+var a = document.getElementById('aaaaa');
+console.log(a);
+console.log(a.innerHTML);
