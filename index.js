@@ -1,8 +1,5 @@
-var p = document.getElementById('abcd');
+var div = document.getElementById('aaa');
 
-var handler = function() {
-  console.log('foo!');
-  p.removeEventListener('click', handler, false);
-};
-
-p.addEventListener('click', handler, false);
+div.addEventListener('click', function() {
+  console.log('div');
+}, true);
