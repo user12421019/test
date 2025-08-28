@@ -1,5 +1,3 @@
-var p = document.getElementById('aaaaa');
+var table = document.getElementById('aaaaa');
 
-var newnode = p.cloneNode(true);
-
-document.body.appendChild(newnode);
+table.deleteRow(0);
