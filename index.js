@@ -1,5 +1,8 @@
-var newelement = document.createElement('p');
-var newtextnode = document.createTextNode("新しいテキストノード");
+var a = document.createElement('a');
+a.href = "http://www.google.com/";
 
-newelement.appendChild(newtextnode);
-document.body.appendChild(newelement);
+var textnode = document.createTextNode("Google");
+a.appendChild(textnode);
+
+var p = document.getElementById('aaaaa');
+p.insertBefore(a, p.firstChild);
