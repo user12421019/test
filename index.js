@@ -1,5 +1,5 @@
-var div = document.getElementById('aaa');
+var listener = function(ev) {
+  console.log("target:", ev.target, "relatedTarget:", ev.relatedTarget);
+};
 
-div.addEventListener('click', function() {
-  console.log('div');
-}, true);
+document.addEventListener('mouseover', listener, false);
